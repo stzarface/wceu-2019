@@ -91,49 +91,6 @@
 
     background-image: $site-hero-path-large;
     background-attachment: fixed;
-
   }
 
-//   background-repeat: no-repeat;
-//   background-position: 50% 0;
-//   background-image: $site-hero-path-wide-temp;
-//   background-color: $site-hero-background;
-
-//   @include breakpoint(medium) {
-
-//     background-size: cover;
-//     background-image: $site-hero-path-wide-temp;
-//     background-position: 50% 100%;
-
-//   }
-
-//   @media (min-width: 1800px) {
-
-//     background-image: $site-hero-path-wide-temp;
-
-//   }
-
 }
-
-// .wp-custom-header {
-
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   top: 0;
-
-//   img {
-
-//     max-width: none;
-
-//     position: absolute;
-//     bottom: 0;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     height: 100%;
-//     min-width: 100vw;
-
-//   }
-
-// }

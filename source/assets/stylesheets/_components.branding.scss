@@ -81,7 +81,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: $site-logo-path;
-    background-size: 100%;
+    background-size: contain;
 
     content: "";
 
