@@ -47,6 +47,8 @@
     color: $color-text-strong-invert;
     text-transform: uppercase;
     background-color: $color-button-primary;
+    font-size: 1rem;
+    line-height: inherit;
 
     &:hover,
     &:focus,
