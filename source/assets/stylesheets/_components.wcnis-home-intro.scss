@@ -10,7 +10,6 @@
 
   .wcnis-home-intro__action {
     width: 100%;
-    max-width: 400px;
     background-color: $color-background-highlight;
     padding: 2rem;
   }
@@ -19,5 +18,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+
+    .wcnis-home-intro__text {
+      padding-right: 3rem;
+    }
+
+    .wcnis-home-intro__action {
+      max-width: 400px;
+    }
   }
 }
