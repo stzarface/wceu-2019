@@ -1,0 +1,23 @@
+.wcnis-home-intro {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  .wcnis-home-intro__text {
+    flex: 1;
+  }
+
+  .wcnis-home-intro__action {
+    width: 100%;
+    max-width: 400px;
+    background-color: $color-background-highlight;
+    padding: 2rem;
+  }
+
+  @include breakpoint(large) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
