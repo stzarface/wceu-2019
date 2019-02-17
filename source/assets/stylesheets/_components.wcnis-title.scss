@@ -1,0 +1,20 @@
+.wcnis-title {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+      margin: 2rem;
+      height: 1px;
+      background-color: $color-text;
+      flex: 1;
+      opacity: 0.5;
+    }
+  }
+}
