@@ -61,7 +61,9 @@
 
 .custom-header {
 
-  background: $site-hero-background $site-hero-path-small no-repeat 100% auto;
+  background: $site-hero-background $site-hero-path-small;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 
   // Add gradient
