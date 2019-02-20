@@ -61,9 +61,8 @@
 
 .custom-header {
 
-  background: $site-hero-background $site-hero-path-small repeat-x 50% 100%;
+  background: $site-hero-background $site-hero-path-small no-repeat 100% auto;
   background-size: cover;
-  background-attachment: scroll;
 
   // Add gradient
   &:before {
@@ -73,9 +72,6 @@
     left: 0;
     right: 0;
     height: 50%;
-
-    background-image: linear-gradient(to top, rgba($site-hero-background, .5), rgba(0,0,0,0));
-
     content: "";
 
     // Hide on homepage
@@ -88,9 +84,7 @@
   }
 
   @include breakpoint(large) {
-
     background-image: $site-hero-path-large;
-    background-attachment: fixed;
   }
 
 }
