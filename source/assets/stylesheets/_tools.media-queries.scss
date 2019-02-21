@@ -12,6 +12,7 @@
   $small-value:       37.5em !default; // 600px
   $medium-value:      48em !default;   // 768px
   $large-value:       62em !default;   // 992px
+  $large-extra-value: 75em !default;   // 1200px
   $extra-large-value: 80em !default;   // 1280px
 
   // Mobile first (min-width)
@@ -21,10 +22,14 @@
     $small:       "(min-width: "$small-value")";
     $medium:      "(min-width: "$medium-value")";
     $large:       "(min-width: "$large-value")";
+    $large-extra: "(min-width: "$large-extra-value")";
     $extra-large: "(min-width: "$extra-large-value")";
 
     @if $point == extra-large {
-      @media #{$extra-large}           { @content; }
+      @media #{$extra-large}          { @content; }
+    }
+    @else if $point == large-extra {
+      @media #{$large-extra}          { @content; }
     }
     @else if $point == large {
       @media #{$large}                { @content; }
@@ -48,10 +53,14 @@
     $to-small:       "(max-width: "($small-value) - .0625em")";  // -1px
     $to-medium:      "(max-width: "($medium-value) - .0625em")";  // -1px
     $to-large:       "(max-width: "($large-value) - .0625em")";  // -1px
+    $to-large-extra: "(max-width: "($large-extra-value) - .0625em")"; // -1px
     $to-extra-large: "(max-width: "($extra-large-value) - .0625em")"; // -1px
 
     @if $point == to-extra-large {
       @media #{$to-extra-large}      { @content; }
+    }
+    @else if $point == to-large-extra {
+      @media #{$to-large-extra}    { @content; }
     }
     @else if $point == to-large {
       @media #{$to-large}            { @content; }
