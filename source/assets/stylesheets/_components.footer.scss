@@ -18,75 +18,87 @@
 
 #colophon {
 
-  max-width: $container-max-width;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: $unit-xl;
+    max-width: $container-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $unit-xl;
 
-  text-align: center;
+    text-align: center;
 
 }
 
 .site-info-generator {
 
-  @include visually-hidden();
+    @include visually-hidden();
 
 }
 
 .site-info-network {
 
-  // @include hide-text();
+    // @include hide-text();
 
-  position: relative;
+    position: relative;
 
-  display: block;
-  width: rem(60);
-  height: rem(60);
-  margin: 0 auto;
-  margin-bottom: $unit-m;
+    display: block;
+    width: rem(60);
+    height: rem(60);
+    margin: 0 auto;
+    margin-bottom: $unit-m;
 
-  color: #fff;
-  text-indent: -9999px;
+    color: #fff;
+    text-indent: -9999px;
 
-  background-image: url('https://europe.wordcamp.org/2016/files/2015/11/wordpress-footer-logo.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: $color-link;
-  background-size: 40px;
-  border-radius: 50%;
+    background-image: url('https://europe.wordcamp.org/2016/files/2015/11/wordpress-footer-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $color-link;
+    background-size: 40px;
+    border-radius: 50%;
 
-  transition: all .1s ease;
+    transition: all .1s ease;
 
-  // &:after {
+    // &:after {
 
-  //   position: absolute;
-  //   left: 50%;
-  //   top: rem(30);
-  //   z-index: -1;
+    //   position: absolute;
+    //   left: 50%;
+    //   top: rem(30);
+    //   z-index: -1;
 
-  //   margin-left: -(rem(15));
-  //   margin-bottom: -(rem(30));
-  //   width: rem(30);
-  //   height: rem(100);
+    //   margin-left: -(rem(15));
+    //   margin-bottom: -(rem(30));
+    //   width: rem(30);
+    //   height: rem(100);
 
-  //   background: $color-link;
-  //   transition: all .1s ease;
+    //   background: $color-link;
+    //   transition: all .1s ease;
 
-  //   content: "";
+    //   content: "";
 
-  // }
+    // }
 
-  &:hover,
-  &:focus,
-  &:active {
+    &:hover,
+    &:focus,
+    &:active {
 
-    background-color: $color-link-hover;
+        background-color: $color-link-hover;
 
-    &:after {
+        &:after {
 
-      background-color: $color-link-hover;
+            background-color: $color-link-hover;
+        }
+
     }
 
-  }
+}
 
+.footer-widgets-block {
+    .social-icons-footer {
+        margin: 0;
+        padding: 50px 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        max-width: 320px;
+        margin: 0 auto
+    }
 }
