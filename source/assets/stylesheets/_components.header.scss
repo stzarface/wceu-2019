@@ -11,82 +11,102 @@
 
 .site-header {
 
-  position: relative;
-
-  background-color: $site-hero-background;
-
-  // background-repeat: repeat-x;
-  // background-position: 50% 0;
-  // background-image: $site-hero-path-small;
-  // background-color: $site-hero-background;
-
-  // @include breakpoint(medium) {
-
-  //   background-size: cover;
-  //   background-image: $site-hero-path-large;
-  //   background-position: 50% 100%;
-
-  // }
-
-  // @media (min-width: 1800px) {
-
-  //   background-image: $site-hero-path-wide;
-
-  // }
-
-  // @include transition-fast();
-
-  // &:before {
-
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-
-  //   background-color: rgba($site-hero-background, $site-hero-overlay);
-
-  //   content: "";
-
-  // }
-
-  > * {
-
     position: relative;
-    z-index: $z-index-header;
 
-  }
+    background-color: $site-hero-background;
+
+    // background-repeat: repeat-x;
+    // background-position: 50% 0;
+    // background-image: $site-hero-path-small;
+    // background-color: $site-hero-background;
+
+    // @include breakpoint(medium) {
+
+    //   background-size: cover;
+    //   background-image: $site-hero-path-large;
+    //   background-position: 50% 100%;
+
+    // }
+
+    // @media (min-width: 1800px) {
+
+    //   background-image: $site-hero-path-wide;
+
+    // }
+
+    // @include transition-fast();
+
+    // &:before {
+
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   bottom: 0;
+    //   right: 0;
+
+    //   background-color: rgba($site-hero-background, $site-hero-overlay);
+
+    //   content: "";
+
+    // }
+
+    >* {
+
+        position: relative;
+        z-index: $z-index-header;
+
+    }
 
 }
 
 .custom-header {
 
-  background: $site-hero-background $site-hero-path-small;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    background: $site-hero-background $site-hero-path-small;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-  // Add gradient
-  &:before {
+    // Add gradient
+    &:before {
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        content: "";
 
-    // Hide on homepage
-    .home & {
+        // Hide on homepage
+        .home & {
 
-      display: none;
+            display: none;
+
+        }
 
     }
 
-  }
+    @include breakpoint(large) {
+        background-image: $site-hero-path-large;
+    }
 
-  @include breakpoint(large) {
-    background-image: $site-hero-path-large;
-  }
+}
 
+body.author {
+    .page-header {
+        margin-bottom: 42px;
+        border-bottom: 2px dotted;
+        border-color: #1b636c;
+
+        h1.page-title {
+            font-size: 1.5em;
+            color: #1b636c;
+
+            .vcard {
+                font-style: normal;
+                font-size: 1.5em;
+            }
+        }
+
+
+    }
 }
