@@ -30,17 +30,19 @@
             }
 
         }
-        @include breakpoint(large) {
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
+    }
 
-            .wcnis-home-intro__text {
-                padding-right: 3rem;
-            }
+    @include breakpoint(large) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
 
-            .wcnis-home-intro__action {
-                max-width: 400px;
-            }
+        .wcnis-home-intro__text {
+            padding-right: 3rem;
+        }
+
+        .wcnis-home-intro__action {
+            max-width: 400px;
         }
     }
+}
